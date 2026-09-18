@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile | Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Lexend Exa", serif;
+            background-image: url("images/bg1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            position: relative;
+        }
+        nav a.active::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        h1 {
+            font-size: 60px;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+            padding: 20px;
+        }
+        table img {
+            width: 400px;
+            height: 600px;
+            object-fit: cover;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="active">Author Profile</a>
+        <a href="cloud.html">Cloud Computing Section</a>
+    </nav>
+   <br>
+
+<!--Second Container-->
+    <section class="container">
+        <table>
+            <tr>
+                <td>
+                    <img src="https://cdn.discordapp.com/attachments/886201150523723817/1550416524626501682/faceme.jpg?ex=6aae4168&is=6aacefe8&hm=0a0dc4607ba1316be2e841babe205f8021fbbb42ac5b6bb272052789d477ae7f" alt="Face Image">
+                </td>
+                <td style="text-align: justify;">
+                    <p style="margin: 60px; font-size: 20px;">
+                    My name is <strong>John Benedict R. Ablaza</strong>. I'm 21 years old.
+                    <br><br>
+                    I am a fourth year <a style="color: red;"> <b>University of the East Caloocan</b></a> student
+                    taking Computer Science. I like reading books and manga. I am very fond of the genres grimdark,
+                    psychological, and philisophical. I was once a digital artist but due to my equipment being hilariously
+                    destroyed with no way to recover them and no funds to buy new ones I was forced to retire.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+<!--Footer-->
+    <footer>
+        <p>Phone: 00-132-444-real | Address: Blk-R34l Location Yes City</p>
+        <p>&copy; 2026 Ablaza, John Benedict R.</p>
+    </footer>
+</body>
+</html>
